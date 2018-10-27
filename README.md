@@ -10,7 +10,6 @@
 
 * Server Side Of the App - (COMPLETED)
 
-# Blog App Version 1
 
 ## Features Client Side
 
