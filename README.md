@@ -4,13 +4,11 @@
 
 ## Features Server Side
 
-- A simple blog design (styles not final)
 - The ability to create, edit and delete private blog posts.
 - The ability to login and stay logged in. (only for a short time.)
 
-* Server Side Of the App - (COMPLETED)
+* (COMPLETED)
 
-# Blog App Version 1
 
 ## Features Client Side
 
