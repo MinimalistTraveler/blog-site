@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use("/", routes);
 
+app.use(express.static(__dirname + "/public"));
+
 // Server Static Assets In Production
 if (process.env.NODE_ENV === "production") {
   // Set Static Folder
