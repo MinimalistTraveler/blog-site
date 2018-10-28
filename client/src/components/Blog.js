@@ -88,12 +88,12 @@ class Blog extends Component {
         {deleteMode ? (
           <div className="window">
             <div className="window-btn-wrap">
-              <a
+              <div
                 className="window-close"
                 onClick={() => this.toggleDeleteMode()}
               >
                 <img src="./images/close.png" alt="close_window" />
-              </a>
+              </div>
             </div>
             <div className="window-contents">
               <h1>Are You Sure?</h1>
