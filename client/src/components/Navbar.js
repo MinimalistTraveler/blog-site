@@ -11,7 +11,7 @@ import {
   NavLink
 } from "reactstrap";
 import { logoutUser } from "../store/actions/actions";
-import "../CSS/navbar.styl";
+import "../CSS/navbar.css";
 import classNames from "classnames";
 class Navigation extends Component {
   constructor(props) {
@@ -80,9 +80,9 @@ class Navigation extends Component {
               </LinkContainer>
             </NavItem>
             <NavItem className="p-2">
-              <LinkContainer to="/about" activeClassName="">
-                <NavLink>GitHub</NavLink>
-              </LinkContainer>
+              <NavLink href="https://github.com/MinimalistTraveler/blog-site">
+                GitHub
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

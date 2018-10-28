@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { Form, FormGroup, Label, Input } from "reactstrap";
 import classNames from "classnames";
-import "../CSS/editblog.styl";
+import "../CSS/editblog.css";
 import { connect } from "react-redux";
 import { editBlog, getBlog } from "../store/actions/actions";
 class EditBlog extends Component {

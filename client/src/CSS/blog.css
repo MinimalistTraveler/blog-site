@@ -1,0 +1,142 @@
+.blog-card {
+  padding: 20px;
+  background: #eee;
+  height: 100%;
+  margin: 20px;
+  position: relative;
+}
+.blog-card .blog-title {
+  font-weight: lighter;
+  font-size: 3em;
+}
+.blog-card .blog-title .date {
+  display: block;
+  font-size: 0.5em;
+  font-style: italic;
+}
+.blog-card .blog-btn-wrap {
+  display: flex;
+  width: 50%;
+}
+.blog-card .blog-btn-wrap .blog-btn {
+  flex-basis: 40%;
+  background: #47624f;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: 0.5s ease-in;
+}
+.blog-card .blog-btn-wrap .blog-btn:hover {
+  background: #008000;
+  transition: 0.5s ease-in;
+}
+.blog-card .blog-btn-wrap .btn-back {
+  position: relative;
+  right: 0;
+}
+.blog-card .blog-btn-wrap .btn-edit {
+  margin-right: auto;
+}
+.blog-card .blog-btn-wrap .btn-delete {
+  margin-right: auto;
+}
+.blog-card .blog-btn-wrap .btn-position {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.window {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: #ddd;
+  box-shadow: 0 0 0 1050px rgba(0, 0, 0, 0.5);
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  animation: fadeIn 0.5s;
+}
+.window .window-btn-wrap {
+  margin-right: auto;
+  flex-basis: 100%;
+}
+.window .window-btn-wrap .window-close {
+  display: block;
+  width: 20px;
+  margin-left: auto;
+}
+.window .window-btn-wrap .window-close img {
+  width: 100%;
+}
+.window .window-btn-wrap .window-close:hover {
+  cursor: pointer;
+}
+.window .window-contents {
+  flex-basis: 100%;
+}
+.window .window-contents h1 {
+  font-size: 4.5em;
+  font-weight: lighter;
+}
+.window .options-btn-wrap {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.window .options-btn-wrap button {
+  flex-basis: 40%;
+  margin: 10px;
+  border: none;
+  background: #47624f;
+  color: #fff;
+  height: 50px;
+}
+.window .options-btn-wrap button:hover {
+  cursor: pointer;
+  background: #008000;
+  opacity: 0.5;
+  transition: 0.5s ease-in;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

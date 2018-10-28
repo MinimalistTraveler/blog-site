@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import { connect } from "react-redux";
 import { getUser, logoutUser, getBlogList } from "../store/actions/actions";
-import "../CSS/home.styl";
+import "../CSS/home.css";
 import { LinkContainer } from "react-router-bootstrap";
 import _ from "underscore.string";
 class Home extends Component {

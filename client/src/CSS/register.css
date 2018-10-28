@@ -1,6 +1,6 @@
-#form-main {
+#register-form-main {
   background: #eee;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 30px;
 }
 .btn-wrap {
@@ -12,8 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn-wrap button:first-child {
   margin: 10px;
 }
 .btn-wrap a {

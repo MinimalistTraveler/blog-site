@@ -11,7 +11,7 @@ import Home from "./components/Home";
 import Register from "./components/Register";
 
 // CSS
-import "./App.styl";
+import "./App.css";
 import { connect } from "react-redux";
 import { login } from "./store/actions/actions";
 class App extends Component {

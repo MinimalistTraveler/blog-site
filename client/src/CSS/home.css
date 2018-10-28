@@ -1,0 +1,129 @@
+.blog-container {
+  padding: 30px;
+  margin: 10px;
+  width: 100%;
+  background: #eee;
+}
+.blog-container .blog-title {
+  font-size: 3em;
+  text-align: left;
+  font-weight: lighter;
+}
+.blog-container p {
+  text-align: justify;
+}
+.blog-container .btn-blog-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-container .btn-blog-container .btn-blog {
+  padding: 10px;
+  border-radius: 5px;
+  flex-basis: 40%;
+  background: #000052;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+.blog-container .btn-blog-container .btn-blog:hover {
+  background: #170080;
+  transition: 0.5s ease-in-out;
+}
+.profile-container {
+  margin: 10px;
+  padding: 20px;
+  font-size: 2em;
+}
+.profile-container .profile-panel h1 {
+  font-size: 4em;
+  font-weight: lighter;
+  animation: fadeIn 3s;
+}
+.profile-container .profile-panel p {
+  font-size: 0.65em;
+}
+.main-panel {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.main-panel::after {
+  content: "My Creations";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blogColor;
+  color: #fff;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.blog-main {
+  padding: 20px;
+}
+.blog-create {
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+}
+.blog-create h2 {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0 auto;
+  display: block;
+}
+.blog-create p {
+  font-size: 0.75em;
+}
+@media screen and (min-width: 968px) {
+  .btn-blog-container {
+    width: 100% !important;
+    margin-left: auto;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

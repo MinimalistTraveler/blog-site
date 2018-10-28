@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import "../CSS/home.styl";
+import "../CSS/home.css";
 import { connect } from "react-redux";
 import { loginUser } from "../store/actions/actions";
 import classNames from "classnames";

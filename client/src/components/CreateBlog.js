@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form, FormGroup, Label, Input } from "reactstrap";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import "../CSS/createblog.styl";
+import "../CSS/createblog.css";
 import { addBlog, logoutUser } from "../store/actions/actions";
 import { connect } from "react-redux";
 import classNames from "classnames";

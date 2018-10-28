@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getBlog, logoutUser, deleteBlog } from "../store/actions/actions";
 import { Link } from "react-router-dom";
-import "../CSS/blog.styl";
+import "../CSS/blog.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencilAlt, faTrash } from "@fortawesome/free-solid-svg-icons";
 

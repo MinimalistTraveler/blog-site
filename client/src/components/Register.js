@@ -12,7 +12,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import "../CSS/register.styl";
+import "../CSS/register.css";
 class Register extends Component {
   constructor(props) {
     super(props);
