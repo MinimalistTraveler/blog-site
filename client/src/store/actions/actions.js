@@ -5,7 +5,7 @@ export function addUser(user) {
   const { username, email, password } = user;
   return {
     type: "ADD_USER",
-    payload: axios.post("http://localhost:5000/register", {
+    payload: axios.post("http://localhost:5000/api/register", {
       username,
       email,
       password
@@ -17,7 +17,7 @@ export function loginUser(user) {
   const { email, password } = user;
   return {
     type: "LOGIN_USER",
-    payload: axios.post("http://localhost:5000/signin", {
+    payload: axios.post("http://localhost:5000/api/signin", {
       email,
       password
     })
@@ -27,7 +27,7 @@ export function loginUser(user) {
 export function getUser() {
   return {
     type: "GET_USER",
-    payload: axios.get("http://localhost:5000/user", {
+    payload: axios.get("http://localhost:5000/api/user", {
       headers: {
         "Content-type": "application/json",
         Authorization: "Bearer " + localStorage.getItem("token")
@@ -53,7 +53,7 @@ export function logoutUser() {
 export function editUser(id, user) {
   return {
     type: "EDIT_USER",
-    payload: axios.patch(`http://localhost:5000/user/${id}`, {
+    payload: axios.patch(`http://localhost:5000/api/user/${id}`, {
       headers: {
         Accept: "application/json",
         "Content-type": "application/json",
@@ -68,7 +68,7 @@ export function editUser(id, user) {
 export function deleteUser(id) {
   return {
     type: "DELETE_USER",
-    payload: axios.delete(`http://localhost:5000/user/${id}`, {
+    payload: axios.delete(`http://localhost:5000/api/user/${id}`, {
       headers: {
         Accept: "application/json",
         "Content-type": "application/json",
@@ -82,7 +82,7 @@ export function deleteUser(id) {
 export function getBlogList() {
   return {
     type: "GET_BLOG_LIST",
-    payload: axios.get("http://localhost:5000/blogs", {
+    payload: axios.get("http://localhost:5000/api/blogs", {
       headers: {
         "Content-type": "application/json",
         Authorization: "Bearer " + localStorage.getItem("token")
@@ -94,7 +94,7 @@ export function getBlogList() {
 export function getBlog(id) {
   return {
     type: "GET_BLOG",
-    payload: axios.get(`http://localhost:5000/blogs/${id}`, {
+    payload: axios.get(`http://localhost:5000/api/blogs/${id}`, {
       headers: {
         "Content-type": "application/json",
         Authorization: "Bearer " + localStorage.getItem("token")
@@ -107,7 +107,7 @@ export function addBlog(title, body) {
   return {
     type: "ADD_BLOG",
     payload: axios.post(
-      `http://localhost:5000/blogs`,
+      `http://localhost:5000/api/blogs`,
       {
         title,
         body
@@ -127,7 +127,7 @@ export function addBlog(title, body) {
 export function deleteBlog(id) {
   return {
     type: "DELETE_BLOG",
-    payload: axios.delete(`http://localhost:5000/blogs/${id}`, {
+    payload: axios.delete(`http://localhost:5000/api/blogs/${id}`, {
       headers: {
         "Content-type": "application/json",
         Accept: "application/json",
@@ -142,7 +142,7 @@ export function editBlog(id, title, body) {
   return {
     type: "EDIT_BLOG",
     payload: axios.patch(
-      `http://localhost:5000/blogs/${id}`,
+      `http://localhost:5000/api/blogs/${id}`,
       {
         title,
         body
