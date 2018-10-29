@@ -1,6 +1,6 @@
 # Blog App Version 1
 
-- Note: This app is still in development right now and there could be some minor bugs that may appear. Don't be alarmed if it happens as it will be ironed out on the upcomming updates. Also expect a few changes to happen in the comming days as this isn't the final release.
+- Note: This app is still in development right now and there could be some minor bugs that may appear. Don't be alarmed if it happens as it will be ironed out on the upcoming updates. Also expect a few changes to happen in the coming days as this isn't the final release.
 
 ## Features Server Side
 
