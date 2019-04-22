@@ -17,3 +17,5 @@
 - A simple blog design (styles not final)
 - The ability to create, edit and delete private blog posts.
 - The ability to login and stay logged in. (only for a short time.)
+
+UPDATE: Version 2 is coming soon: https://github.com/erikbridges/blog-application-2
